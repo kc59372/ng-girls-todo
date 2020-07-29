@@ -1,6 +1,13 @@
 import { Component, IterableDiffers } from '@angular/core';
 import { templateJitUrl } from '@angular/compiler';
 
+localStorage.setItem('name', 'Kaci');
+
+let name = localStorage.getItem('name');
+alert(`Hello ${ name }!`);
+
+/** localStorage.clear(); */
+
 @Component({
   selector: 'app-root',
   template: `
